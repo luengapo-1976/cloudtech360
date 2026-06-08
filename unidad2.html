@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unidad 2 - Computación en la Nube · CloudTech360</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-brand">
+      <div class="brand-icon">☁️</div>
+      CloudTech360
+    </a>
+    <ul class="navbar-nav">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="unidad1.html">Unidad 1</a></li>
+      <li><a href="unidad2.html" class="active">Unidad 2</a></li>
+      <li><a href="unidad3.html">Unidad 3</a></li>
+      <li><a href="autor.html">Autor</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Page Hero -->
+<div class="page-hero u2">
+  <div class="page-hero-content">
+    <div class="unit-label">☁️ Unidad 2</div>
+    <h1>Computación en la Nube: Definiciones, Modelos y Aplicaciones</h1>
+    <p>
+      Comprende el marco de referencia NIST, las características esenciales de la nube
+      y los distintos modelos de servicio y despliegue que conforman el ecosistema actual.
+    </p>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="content-wrapper">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <nav class="sidebar-nav">
+      <div class="sidebar-nav-title">Contenido</div>
+      <a href="#definicion-nist">🏛️ Definición NIST</a>
+      <a href="#caracteristicas">⭐ 5 Características</a>
+      <a href="#modelos-servicio">🔧 Modelos SPI</a>
+      <a href="#modelos-despliegue">🌐 Modelos de Despliegue</a>
+      <a href="#virtualizacion">⚙️ Virtualización</a>
+      <a href="#actividades">✅ Actividades</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- ── Section 1: Definición NIST ────────────────────── -->
+    <section id="definicion-nist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon blue">🏛️</div>
+          <div>
+            <h3>Definición Oficial del NIST</h3>
+            <p style="color:var(--text-muted);font-size:.87rem;margin:0">National Institute of Standards and Technology - SP 800-145</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="quote-block" style="margin-bottom:1.5rem">
+            <p class="quote-text">
+              La computación en la nube es un modelo para habilitar el acceso de red ubicuo,
+              conveniente y bajo demanda a un grupo compartido de recursos informáticos configurables
+              (redes, servidores, almacenamiento, aplicaciones y servicios) que pueden aprovisionarse
+              y liberarse rápidamente con un mínimo esfuerzo de gestión o interacción con el proveedor de servicios.
+            </p>
+            <div class="quote-source">NIST SP 800-145, Peter Mell y Timothy Grance (2011)</div>
+          </div>
+
+          <p>
+            Esta definición es el estándar de referencia internacional que unifica el vocabulario
+            sobre computación en la nube. Identifica tres dimensiones fundamentales que la caracterizan:
+          </p>
+
+          <div class="chars-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+            <div class="char-item">
+              <div class="char-icon">🌍</div>
+              <h4>Ubicuo</h4>
+              <p>Accesible desde cualquier lugar con conexión a internet, sin depender de una ubicación física específica.</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">⚡</div>
+              <h4>Bajo Demanda</h4>
+              <p>Los recursos se aprovisionan cuando se necesitan, sin planificación previa ni intervención del proveedor.</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">🔗</div>
+              <h4>Recursos Compartidos</h4>
+              <p>La infraestructura física es compartida entre múltiples clientes mediante virtualización y aislamiento lógico.</p>
+            </div>
+          </div>
+
+          <div class="callout info">
+            <div class="callout-icon">📌</div>
+            <div class="callout-content">
+              <strong>¿Por qué importa esta definición?</strong>
+              <p>Establecer un vocabulario común es esencial para la negociación de contratos,
+              cumplimiento regulatorio, auditorías de seguridad y la evaluación objetiva de
+              proveedores de servicios cloud. Cuando todos hablan el mismo idioma, los acuerdos
+              son más precisos y las expectativas más claras.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ── Section 2: Características Esenciales ─────────── -->
+    <section id="caracteristicas">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon green">⭐</div>
+          <div>
+            <h3>Las 5 Características Esenciales de la Nube</h3>
+            <p style="color:var(--text-muted);font-size:.87rem;margin:0">Según el modelo de referencia NIST SP 800-145</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>
+            Para que un servicio sea considerado genuinamente "en la nube", debe exhibir las
+            siguientes cinco características esenciales. La ausencia de cualquiera de ellas
+            puede indicar que el servicio es simplemente hosting tradicional con un nombre diferente.
+          </p>
+
+          <div class="chars-grid">
+            <div class="char-item">
+              <div class="char-icon">🖥️</div>
+              <h4>1. Autoservicio bajo demanda</h4>
+              <p>El consumidor puede aprovisionar capacidades de cómputo unilateralmente, según sea necesario, sin requerir interacción humana con el proveedor.</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">📶</div>
+              <h4>2. Acceso amplio a la red</h4>
+              <p>Los servicios están disponibles a través de la red y se acceden mediante mecanismos estándar (HTTP, REST, APIs) desde diferentes dispositivos.</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">🔄</div>
+              <h4>3. Agrupación de recursos</h4>
+              <p>Los recursos del proveedor se agrupan para servir a múltiples consumidores mediante un modelo multi-tenant, con ubicación abstracta (región, datacenter).</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">📈</div>
+              <h4>4. Elasticidad rápida</h4>
+              <p>Las capacidades pueden escalarse automáticamente hacia arriba o hacia abajo según la demanda. Para el consumidor, los recursos parecen ilimitados.</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">📊</div>
+              <h4>5. Servicio medido</h4>
+              <p>Los sistemas cloud controlan y optimizan el uso de recursos mediante capacidades de medición. El uso se monitorea, controla y reporta de forma transparente.</p>
+            </div>
+          </div>
+
+          <div class="callout success">
+            <div class="callout-icon">✅</div>
+            <div class="callout-content">
+              <strong>Aplicación práctica: Verificación de un servicio cloud</strong>
+              <p>Al evaluar un proveedor, usa este checklist de 5 puntos para confirmar que el
+              servicio es genuinamente cloud. Un servicio que no permite autoservicio (requiere
+              tickets a soporte para escalar) o que no ofrece facturación por consumo real,
+              no cumple el estándar NIST.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ── Section 3: Modelos de Servicio (SPI) ──────────── -->
+    <section id="modelos-servicio">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon amber">🔧</div>
+          <div>
+            <h3>Modelos de Servicio: SaaS, PaaS e IaaS</h3>
+            <p style="color:var(--text-muted);font-size:.87rem;margin:0">El acrónimo SPI define el espectro completo de servicios en la nube</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>
+            Los modelos de servicio definen el nivel de control y responsabilidad que el proveedor
+            y el cliente comparten sobre la pila tecnológica. Elegir el modelo correcto es una
+            decisión estratégica que afecta directamente la agilidad, el costo y el control operativo.
+          </p>
+
+          <div class="spi-grid">
+
+            <div class="spi-card">
+              <div class="spi-header saas">
+                <div class="spi-acronym">SaaS</div>
+                <div class="spi-full">Software as a Service</div>
+              </div>
+              <div class="spi-body">
+                <p>Aplicación completa entregada a través de internet. El proveedor gestiona toda la infraestructura; el usuario solo consume la aplicación.</p>
+                <p><strong>Ejemplos:</strong> Microsoft 365, Salesforce, Google Workspace, Slack, Dropbox, SAP S/4HANA Cloud.</p>
+                <div class="spi-manages">
+                  <div class="spi-manages-title">Gestiona el cliente</div>
+                  <span class="spi-tag user">Datos propios</span>
+                  <span class="spi-tag user">Usuarios</span>
+                  <span class="spi-tag user">Configuración</span>
+                  <div class="spi-manages-title" style="margin-top:.75rem">Gestiona el proveedor</div>
+                  <span class="spi-tag provider">App</span>
+                  <span class="spi-tag provider">Runtime</span>
+                  <span class="spi-tag provider">OS</span>
+                  <span class="spi-tag provider">Red</span>
+                  <span class="spi-tag provider">Storage</span>
+                  <span class="spi-tag provider">Servidores</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="spi-card">
+              <div class="spi-header paas">
+                <div class="spi-acronym">PaaS</div>
+                <div class="spi-full">Platform as a Service</div>
+              </div>
+              <div class="spi-body">
+                <p>Plataforma de desarrollo que permite a los equipos crear, ejecutar y gestionar aplicaciones sin administrar la infraestructura subyacente.</p>
+                <p><strong>Ejemplos:</strong> Azure App Service, Google App Engine, AWS Elastic Beanstalk, Heroku, Red Hat OpenShift.</p>
+                <div class="spi-manages">
+                  <div class="spi-manages-title">Gestiona el cliente</div>
+                  <span class="spi-tag user">Aplicaciones</span>
+                  <span class="spi-tag user">Datos</span>
+                  <span class="spi-tag user">Código</span>
+                  <div class="spi-manages-title" style="margin-top:.75rem">Gestiona el proveedor</div>
+                  <span class="spi-tag provider">Runtime</span>
+                  <span class="spi-tag provider">Middleware</span>
+                  <span class="spi-tag provider">OS</span>
+                  <span class="spi-tag provider">Red</span>
+                  <span class="spi-tag provider">Servidores</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="spi-card">
+              <div class="spi-header iaas">
+                <div class="spi-acronym">IaaS</div>
+                <div class="spi-full">Infrastructure as a Service</div>
+              </div>
+              <div class="spi-body">
+                <p>Recursos de infraestructura base (cómputo, red, almacenamiento) entregados como un servicio. Máximo control, máxima responsabilidad del cliente.</p>
+                <p><strong>Ejemplos:</strong> AWS EC2, Azure Virtual Machines, Google Compute Engine, DigitalOcean, IBM Cloud.</p>
+                <div class="spi-manages">
+                  <div class="spi-manages-title">Gestiona el cliente</div>
+                  <span class="spi-tag user">Aplicaciones</span>
+                  <span class="spi-tag user">Datos</span>
+                  <span class="spi-tag user">Runtime</span>
+                  <span class="spi-tag user">OS</span>
+                  <span class="spi-tag user">Red virtual</span>
+                  <div class="spi-manages-title" style="margin-top:.75rem">Gestiona el proveedor</div>
+                  <span class="spi-tag provider">Hardware físico</span>
+                  <span class="spi-tag provider">Datacenter</span>
+                  <span class="spi-tag provider">Red física</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Criterio</th>
+                  <th>SaaS</th>
+                  <th>PaaS</th>
+                  <th>IaaS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Control del cliente</td>
+                  <td><span class="badge badge-red">Mínimo</span></td>
+                  <td><span class="badge badge-amber">Moderado</span></td>
+                  <td><span class="badge badge-green">Máximo</span></td>
+                </tr>
+                <tr>
+                  <td>Complejidad de gestión</td>
+                  <td><span class="badge badge-green">Baja</span></td>
+                  <td><span class="badge badge-amber">Media</span></td>
+                  <td><span class="badge badge-red">Alta</span></td>
+                </tr>
+                <tr>
+                  <td>Velocidad de despliegue</td>
+                  <td><span class="badge badge-green">Inmediata</span></td>
+                  <td><span class="badge badge-blue">Horas</span></td>
+                  <td><span class="badge badge-amber">Días / Horas</span></td>
+                </tr>
+                <tr>
+                  <td>Personalización</td>
+                  <td><span class="badge badge-red">Limitada</span></td>
+                  <td><span class="badge badge-blue">Parcial</span></td>
+                  <td><span class="badge badge-green">Total</span></td>
+                </tr>
+                <tr>
+                  <td>Ideal para</td>
+                  <td>Usuarios finales, apps de negocio</td>
+                  <td>Desarrolladores, equipos DevOps</td>
+                  <td>Equipos de TI, cargas específicas</td>
+                </tr>
+                <tr>
+                  <td>Costo inicial</td>
+                  <td><span class="badge badge-green">Muy bajo</span></td>
+                  <td><span class="badge badge-blue">Bajo-Medio</span></td>
+                  <td><span class="badge badge-amber">Variable</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="callout info">
+            <div class="callout-icon">💡</div>
+            <div class="callout-content">
+              <strong>¿Cómo elegir el modelo correcto?</strong>
+              <p>La regla general es: usa SaaS para funciones estándar de negocio (correo, CRM, ERP),
+              PaaS cuando tu equipo necesita desarrollar aplicaciones personalizadas sin administrar
+              infraestructura, e IaaS cuando necesitas control total sobre el entorno (por requisitos
+              regulatorios, legacy systems o cargas de trabajo muy específicas).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ── Section 4: Modelos de Despliegue ──────────────── -->
+    <section id="modelos-despliegue">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon purple">🌐</div>
+          <div>
+            <h3>Modelos de Despliegue</h3>
+            <p style="color:var(--text-muted);font-size:.87rem;margin:0">Dónde y cómo se aloja la infraestructura cloud</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>
+            Los modelos de despliegue definen quién posee, gestiona y tiene acceso a la
+            infraestructura cloud. La elección correcta depende de los requisitos de seguridad,
+            cumplimiento normativo, presupuesto y estrategia de la organización.
+          </p>
+
+          <div class="deploy-grid">
+            <div class="deploy-card">
+              <div class="deploy-icon">🌍</div>
+              <h4>Nube Pública</h4>
+              <p>La infraestructura es propiedad del proveedor cloud y está disponible para cualquier organización. Máxima elasticidad y economías de escala.</p>
+              <div style="margin-top:1rem">
+                <span class="badge badge-green">✓ Bajo costo inicial</span><br/>
+                <span class="badge badge-green" style="margin-top:.3rem">✓ Elasticidad infinita</span><br/>
+                <span class="badge badge-amber" style="margin-top:.3rem">△ Menor control</span>
+              </div>
+            </div>
+
+            <div class="deploy-card">
+              <div class="deploy-icon">🏢</div>
+              <h4>Nube Privada</h4>
+              <p>La infraestructura es usada exclusivamente por una organización. Puede estar on-premise o en las instalaciones de un tercero.</p>
+              <div style="margin-top:1rem">
+                <span class="badge badge-green">✓ Máximo control</span><br/>
+                <span class="badge badge-green" style="margin-top:.3rem">✓ Mayor seguridad</span><br/>
+                <span class="badge badge-red" style="margin-top:.3rem">✗ Alto costo</span>
+              </div>
+            </div>
+
+            <div class="deploy-card">
+              <div class="deploy-icon">👥</div>
+              <h4>Nube Comunitaria</h4>
+              <p>Compartida por varias organizaciones con intereses comunes (misma industria, mismos requisitos regulatorios). Ejemplo: nubes para el sector salud o financiero.</p>
+              <div style="margin-top:1rem">
+                <span class="badge badge-blue">✓ Costo compartido</span><br/>
+                <span class="badge badge-blue" style="margin-top:.3rem">✓ Interoperabilidad</span><br/>
+                <span class="badge badge-amber" style="margin-top:.3rem">△ Menos común</span>
+              </div>
+            </div>
+
+            <div class="deploy-card">
+              <div class="deploy-icon">🔀</div>
+              <h4>Nube Híbrida</h4>
+              <p>Combinación de nubes privadas y públicas que comparten datos y aplicaciones mediante tecnología estandarizada. El modelo más adoptado por grandes empresas.</p>
+              <div style="margin-top:1rem">
+                <span class="badge badge-green">✓ Máxima flexibilidad</span><br/>
+                <span class="badge badge-green" style="margin-top:.3rem">✓ Optimización de costos</span><br/>
+                <span class="badge badge-amber" style="margin-top:.3rem">△ Mayor complejidad</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="table-wrapper" style="margin-top:1.5rem">
+            <table>
+              <thead>
+                <tr>
+                  <th>Criterio</th>
+                  <th>Pública</th>
+                  <th>Privada</th>
+                  <th>Comunitaria</th>
+                  <th>Híbrida</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Costo inicial</td>
+                  <td><span class="badge badge-green">Muy bajo</span></td>
+                  <td><span class="badge badge-red">Alto</span></td>
+                  <td><span class="badge badge-blue">Compartido</span></td>
+                  <td><span class="badge badge-amber">Variable</span></td>
+                </tr>
+                <tr>
+                  <td>Seguridad/Control</td>
+                  <td><span class="badge badge-amber">Moderado</span></td>
+                  <td><span class="badge badge-green">Máximo</span></td>
+                  <td><span class="badge badge-blue">Alto</span></td>
+                  <td><span class="badge badge-blue">Configurable</span></td>
+                </tr>
+                <tr>
+                  <td>Escalabilidad</td>
+                  <td><span class="badge badge-green">Ilimitada</span></td>
+                  <td><span class="badge badge-red">Limitada</span></td>
+                  <td><span class="badge badge-amber">Moderada</span></td>
+                  <td><span class="badge badge-green">Alta</span></td>
+                </tr>
+                <tr>
+                  <td>Cumplimiento regulatorio</td>
+                  <td><span class="badge badge-amber">Depende</span></td>
+                  <td><span class="badge badge-green">Facilita</span></td>
+                  <td><span class="badge badge-green">Orientado</span></td>
+                  <td><span class="badge badge-blue">Flexible</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="callout warning">
+            <div class="callout-icon">🔀</div>
+            <div class="callout-content">
+              <strong>Tendencia actual: Multi-Cloud e Híbrido</strong>
+              <p>Según encuestas de la industria, más del 80% de las empresas Fortune 500 adoptan
+              estrategias híbridas o multi-cloud para evitar la dependencia de un único proveedor
+              (vendor lock-in), optimizar costos por carga de trabajo y cumplir con requisitos de
+              soberanía de datos en diferentes jurisdicciones.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ── Section 5: Virtualización ─────────────────────── -->
+    <section id="virtualizacion">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon red">⚙️</div>
+          <div>
+            <h3>Virtualización: La Tecnología Base de la Nube</h3>
+            <p style="color:var(--text-muted);font-size:.87rem;margin:0">La abstracción de recursos que hace posible la nube</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>
+            La <strong>virtualización</strong> es la tecnología fundamental que permite la abstracción
+            de los recursos físicos (CPU, RAM, almacenamiento, red) para crear representaciones lógicas
+            que pueden ser administradas de forma independiente del hardware subyacente.
+          </p>
+          <p>
+            Sin virtualización, no sería posible la agrupación de recursos multi-tenant, la elasticidad
+            rápida ni el aprovisionamiento bajo demanda que definen la computación en la nube.
+          </p>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Componente</th>
+                  <th>Descripción</th>
+                  <th>Beneficio para la Nube</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Hypervisor (VMM)</td>
+                  <td>Software que crea y gestiona máquinas virtuales (VMs). Tipos: Tipo 1 (bare metal) y Tipo 2 (sobre OS).</td>
+                  <td>Permite ejecutar múltiples VMs en un servidor físico, maximizando utilización.</td>
+                </tr>
+                <tr>
+                  <td>Máquinas Virtuales (VMs)</td>
+                  <td>Emulación completa de un sistema informático con su propio OS, aplicaciones y recursos virtuales.</td>
+                  <td>Aislamiento fuerte entre tenants; base de IaaS.</td>
+                </tr>
+                <tr>
+                  <td>Contenedores</td>
+                  <td>Unidades ligeras de software que empaquetan código y dependencias. Comparten el kernel del OS host.</td>
+                  <td>Mayor densidad, arranque en segundos; base de PaaS y microservicios.</td>
+                </tr>
+                <tr>
+                  <td>Orquestación (Kubernetes)</td>
+                  <td>Sistema que automatiza el despliegue, escalado y gestión de contenedores.</td>
+                  <td>Elasticidad automática y alta disponibilidad de aplicaciones.</td>
+                </tr>
+                <tr>
+                  <td>Virtualización de red (SDN)</td>
+                  <td>Abstracción de la infraestructura de red para gestionarla mediante software.</td>
+                  <td>Redes privadas virtuales (VPC) y segmentación lógica por tenant.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="chars-grid" style="margin-top:1.5rem">
+            <div class="char-item">
+              <div class="char-icon">📦</div>
+              <h4>Consolidación</h4>
+              <p>Múltiples cargas de trabajo en un mismo servidor físico → menor huella de hardware.</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">🔁</div>
+              <h4>Portabilidad</h4>
+              <p>Las VMs y contenedores pueden moverse entre hosts físicos o regiones geográficas.</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">🛡️</div>
+              <h4>Aislamiento</h4>
+              <p>Cada tenant opera en un entorno lógicamente separado, aunque comparta hardware físico.</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">⚡</div>
+              <h4>Aprovisionamiento rápido</h4>
+              <p>Una nueva VM o contenedor puede estar operativo en segundos, no en días.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ── Section 6: Actividades ────────────────────────── -->
+    <section id="actividades">
+      <div class="activity-box">
+        <div class="activity-title">
+          ✅ Actividades de Aprendizaje - Unidad 2
+        </div>
+        <ul class="activity-list">
+          <li>Evalúa 3 servicios digitales que utilizas cotidianamente (redes sociales, correo, streaming, herramientas de trabajo) e identifica a cuál modelo de servicio (SaaS, PaaS o IaaS) pertenecen y por qué.</li>
+          <li>Utiliza la definición NIST como checklist: selecciona un proveedor cloud de tu región y verifica si su servicio cumple las 5 características esenciales. Documenta tus hallazgos.</li>
+          <li>Compara los planes de precios de un mismo tipo de servicio en AWS, Azure y Google Cloud. Identifica diferencias en el modelo de precios y cuál conviene para una carga de trabajo específica.</li>
+          <li>Diseña la arquitectura cloud para una empresa mediana que necesita un ERP, un sitio web de e-commerce y herramientas de colaboración. Justifica qué modelo SPI y de despliegue usarías para cada componente.</li>
+          <li>Investiga el concepto de "vendor lock-in" y propone estrategias para mitigarlo al adoptar servicios cloud, considerando la portabilidad de datos y el uso de estándares abiertos.</li>
+        </ul>
+      </div>
+
+      <div class="terms-grid">
+        <div class="term-item">
+          <div class="term-name">SaaS - Software as a Service</div>
+          <div class="term-def">Aplicación completa entregada vía internet, gestionada por el proveedor. El cliente solo configura y usa la aplicación.</div>
+        </div>
+        <div class="term-item">
+          <div class="term-name">PaaS - Platform as a Service</div>
+          <div class="term-def">Plataforma de desarrollo y ejecución de aplicaciones. El cliente gestiona el código y los datos; el proveedor, la infraestructura y el runtime.</div>
+        </div>
+        <div class="term-item">
+          <div class="term-name">IaaS - Infrastructure as a Service</div>
+          <div class="term-def">Recursos de infraestructura virtualizados (cómputo, red, almacenamiento) entregados como servicio. Máximo control del cliente.</div>
+        </div>
+        <div class="term-item">
+          <div class="term-name">Hypervisor</div>
+          <div class="term-def">Software que crea y gestiona máquinas virtuales, permitiendo que múltiples sistemas operativos se ejecuten sobre el mismo hardware físico.</div>
+        </div>
+        <div class="term-item">
+          <div class="term-name">Multi-tenant</div>
+          <div class="term-def">Arquitectura donde múltiples clientes (tenants) comparten la misma infraestructura física con aislamiento lógico entre sus datos y aplicaciones.</div>
+        </div>
+        <div class="term-item">
+          <div class="term-name">Elasticidad</div>
+          <div class="term-def">Capacidad de escalar automáticamente los recursos hacia arriba (scale-up) o hacia abajo (scale-down) en respuesta a cambios en la demanda.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation between units -->
+    <div style="display:flex;justify-content:space-between;margin-top:2rem;flex-wrap:wrap;gap:1rem">
+      <a href="unidad1.html" class="btn btn-outline" style="color:var(--primary);border-color:var(--border)">
+        ← Unidad 1: Costos y ROI
+      </a>
+      <a href="unidad3.html" class="btn btn-primary">
+        Ir a Unidad 3: Ética y Sostenibilidad →
+      </a>
+    </div>
+
+  </main>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h4>☁️ CloudTech360</h4>
+        <p>Sitio educativo sobre computación en la nube, orientado al desarrollo de competencias empresariales y tecnológicas.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Unidades</h5>
+        <ul>
+          <li><a href="unidad1.html">Unidad 1: Costos y ROI</a></li>
+          <li><a href="unidad2.html">Unidad 2: Modelos de Nube</a></li>
+          <li><a href="unidad3.html">Unidad 3: Ética y Sostenibilidad</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Temas Unidad 2</h5>
+        <ul>
+          <li><a href="#definicion-nist">Definición NIST</a></li>
+          <li><a href="#caracteristicas">5 Características</a></li>
+          <li><a href="#modelos-servicio">SaaS / PaaS / IaaS</a></li>
+          <li><a href="#modelos-despliegue">Modelos de despliegue</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CloudTech360 - Tecnologías Emergentes: Computación en la Nube</span>
+      <span>Unidad 2 de 3</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

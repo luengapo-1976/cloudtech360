@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unidad 3 - Ética, Economía, Sociedad y Ambiente · CloudTech360</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-brand">
+      <div class="brand-icon">☁️</div>
+      CloudTech360
+    </a>
+    <ul class="navbar-nav">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="unidad1.html">Unidad 1</a></li>
+      <li><a href="unidad2.html">Unidad 2</a></li>
+      <li><a href="unidad3.html" class="active">Unidad 3</a></li>
+      <li><a href="autor.html">Autor</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Page Hero -->
+<div class="page-hero u3">
+  <div class="page-hero-content">
+    <div class="unit-label">🌍 Unidad 3</div>
+    <h1>Contexto Ético, Económico, Social y Ambiental</h1>
+    <p>
+      Investiga los factores externos que determinan el impacto real de las soluciones en la nube:
+      seguridad, ética, sostenibilidad ambiental y bienestar social.
+    </p>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="content-wrapper">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <nav class="sidebar-nav">
+      <div class="sidebar-nav-title">Contenido</div>
+      <a href="#responsabilidad">🛡️ Responsabilidad Compartida</a>
+      <a href="#seguridad">🔐 Controles de Seguridad</a>
+      <a href="#etica">⚖️ Ética en la Nube e IA</a>
+      <a href="#sostenibilidad">🌱 Sostenibilidad Ambiental</a>
+      <a href="#impacto-social">👥 Impacto Social</a>
+      <a href="#actividades">✅ Actividades</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- ── Section 1: Responsabilidad Compartida ─────────── -->
+    <section id="responsabilidad">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon purple">🛡️</div>
+          <div>
+            <h3>Modelo de Responsabilidad Compartida</h3>
+            <p style="color:var(--text-muted);font-size:.87rem;margin:0">La seguridad es una responsabilidad distribuida, no delegable por completo</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>
+            El <strong>Modelo de Responsabilidad Compartida</strong> establece cómo se distribuyen
+            las obligaciones de seguridad entre el proveedor de servicios cloud y el cliente,
+            según el modelo de servicio utilizado (IaaS, PaaS o SaaS).
+          </p>
+
+          <div class="callout danger">
+            <div class="callout-icon">🚨</div>
+            <div class="callout-content">
+              <strong>Principio irrenunciable</strong>
+              <p>Aunque los métodos tradicionales de protección cambian en la nube, la organización
+              <strong>nunca puede externalizar la responsabilidad del gobierno</strong> de sus datos
+              y procesos. El proveedor cloud protege la infraestructura; el cliente es siempre
+              responsable de sus datos, identidades y accesos.</p>
+            </div>
+          </div>
+
+          <div class="table-wrapper" style="margin-top:1.5rem">
+            <table class="responsibility-table">
+              <thead>
+                <tr style="background:linear-gradient(135deg,#1e3a5f,#7c3aed)">
+                  <th style="text-align:left;padding:1rem 1.1rem;color:#fff">Responsabilidad</th>
+                  <th style="color:#fff">IaaS</th>
+                  <th style="color:#fff">PaaS</th>
+                  <th style="color:#fff">SaaS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Datos y clasificación de información</td>
+                  <td><span class="resp-badge resp-customer">Cliente</span></td>
+                  <td><span class="resp-badge resp-customer">Cliente</span></td>
+                  <td><span class="resp-badge resp-customer">Cliente</span></td>
+                </tr>
+                <tr>
+                  <td>Gestión de identidades y accesos (IAM)</td>
+                  <td><span class="resp-badge resp-customer">Cliente</span></td>
+                  <td><span class="resp-badge resp-customer">Cliente</span></td>
+                  <td><span class="resp-badge resp-shared">Compartida</span></td>
+                </tr>
+                <tr>
+                  <td>Aplicaciones y código</td>
+                  <td><span class="resp-badge resp-customer">Cliente</span></td>
+                  <td><span class="resp-badge resp-customer">Cliente</span></td>
+                  <td><span class="resp-badge resp-provider">Proveedor</span></td>
+                </tr>
+                <tr>
+                  <td>Sistema operativo</td>
+                  <td><span class="resp-badge resp-customer">Cliente</span></td>
+                  <td><span class="resp-badge resp-provider">Proveedor</span></td>
+                  <td><span class="resp-badge resp-provider">Proveedor</span></td>
+                </tr>
+                <tr>
+                  <td>Red virtual y firewall</td>
+                  <td><span class="resp-badge resp-shared">Compartida</span></td>
+                  <td><span class="resp-badge resp-provider">Proveedor</span></td>
+                  <td><span class="resp-badge resp-provider">Proveedor</span></td>
+                </tr>
+                <tr>
+                  <td>Infraestructura física</td>
+                  <td><span class="resp-badge resp-provider">Proveedor</span></td>
+                  <td><span class="resp-badge resp-provider">Proveedor</span></td>
+                  <td><span class="resp-badge resp-provider">Proveedor</span></td>
+                </tr>
+                <tr>
+                  <td>Seguridad del datacenter</td>
+                  <td><span class="resp-badge resp-provider">Proveedor</span></td>
+                  <td><span class="resp-badge resp-provider">Proveedor</span></td>
+                  <td><span class="resp-badge resp-provider">Proveedor</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style="display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1rem;align-items:center;font-size:.82rem">
+            <div><span class="resp-badge resp-customer">Cliente</span> = Responsabilidad del cliente</div>
+            <div><span class="resp-badge resp-shared">Compartida</span> = Responsabilidad conjunta</div>
+            <div><span class="resp-badge resp-provider">Proveedor</span> = Responsabilidad del proveedor cloud</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ── Section 2: Controles de Seguridad ─────────────── -->
+    <section id="seguridad">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon red">🔐</div>
+          <div>
+            <h3>Controles de Seguridad Esenciales en la Nube</h3>
+            <p style="color:var(--text-muted);font-size:.87rem;margin:0">Mecanismos para confirmar elementos de seguridad y crear confiabilidad</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>
+            La seguridad en la nube requiere un enfoque en capas que combine controles técnicos,
+            organizacionales y procedurales. Los siguientes mecanismos son considerados prácticas
+            mínimas indispensables (baseline) para cualquier organización que adopte servicios cloud.
+          </p>
+
+          <div class="chars-grid">
+            <div class="char-item">
+              <div class="char-icon">🔑</div>
+              <h4>Autenticación Multifactor (MFA)</h4>
+              <p>Requiere que los usuarios verifiquen su identidad con dos o más factores (contraseña + código OTP + biometría). Reduce el riesgo de compromiso de credenciales en más del 99%.</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">🔒</div>
+              <h4>Cifrado de Datos</h4>
+              <p>Los datos deben estar cifrados en tránsito (TLS/HTTPS) y en reposo (AES-256). Las claves de cifrado deben gestionarse de forma independiente y segura (HSM, KMS).</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">👤</div>
+              <h4>Principio de Mínimo Privilegio</h4>
+              <p>Cada usuario, proceso o sistema debe tener únicamente los permisos estrictamente necesarios para realizar su función. Reduce el radio de impacto de un compromiso.</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">📋</div>
+              <h4>Monitoreo y Auditoría</h4>
+              <p>Registro continuo de actividades (logs de acceso, cambios de configuración, eventos de seguridad) para detectar anomalías y cumplir requisitos regulatorios.</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">🏛️</div>
+              <h4>Cumplimiento y Certificaciones</h4>
+              <p>Verificar que el proveedor cumple con estándares relevantes: ISO 27001, SOC 2, PCI-DSS, HIPAA, GDPR. En América Latina: Ley de Datos Personales de cada país.</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">🔄</div>
+              <h4>Recuperación ante Desastres</h4>
+              <p>Definir objetivos de punto de recuperación (RPO) y tiempo de recuperación (RTO). Probar regularmente los planes de continuidad del negocio en entornos cloud.</p>
+            </div>
+          </div>
+
+          <div class="callout success">
+            <div class="callout-icon">🔐</div>
+            <div class="callout-content">
+              <strong>Comenzar con Zero Trust</strong>
+              <p>El paradigma moderno de seguridad cloud es <strong>Zero Trust</strong>: "nunca confíes,
+              siempre verifica". Asume que cualquier solicitud, interna o externa, puede estar comprometida
+              y debe verificarse explícitamente antes de otorgar acceso. Combina MFA, microsegmentación
+              de red, y acceso contextual (dispositivo, ubicación, comportamiento).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ── Section 3: Ética en la Nube e IA ──────────────── -->
+    <section id="etica">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon purple">⚖️</div>
+          <div>
+            <h3>Ética en la Nube y la Inteligencia Artificial</h3>
+            <p style="color:var(--text-muted);font-size:.87rem;margin:0">Principios para el desarrollo y uso responsable de tecnología</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>
+            La adopción masiva de servicios cloud, especialmente aquellos que incorporan Inteligencia
+            Artificial, plantea desafíos éticos significativos. Las organizaciones tienen la
+            responsabilidad de garantizar que sus sistemas sean justos, transparentes y respetuosos
+            de los derechos humanos.
+          </p>
+
+          <div class="principles-grid">
+            <div class="principle-card">
+              <div class="principle-icon">🔍</div>
+              <h4>Transparencia</h4>
+              <p>Los sistemas de IA y los algoritmos que toman decisiones que afectan a las personas deben ser explicables y comprensibles. Los usuarios tienen derecho a saber cómo se toman las decisiones.</p>
+            </div>
+            <div class="principle-card">
+              <div class="principle-icon">📝</div>
+              <h4>Rendición de Cuentas</h4>
+              <p>Debe existir siempre un actor humano responsable de las decisiones tomadas por sistemas automatizados. La IA no puede ser un escudo para eludir responsabilidades.</p>
+            </div>
+            <div class="principle-card">
+              <div class="principle-icon">⚖️</div>
+              <h4>Equidad</h4>
+              <p>Los sistemas no deben producir resultados que discriminen injustamente a grupos de personas. Los sesgos en los datos de entrenamiento se amplifican en los modelos de IA.</p>
+            </div>
+            <div class="principle-card">
+              <div class="principle-icon">🚫</div>
+              <h4>No Discriminación</h4>
+              <p>Los algoritmos de decisión no deben discriminar por raza, género, edad, origen étnico, religión u otras características protegidas, explícita o implícitamente.</p>
+            </div>
+            <div class="principle-card">
+              <div class="principle-icon">🔒</div>
+              <h4>Privacidad</h4>
+              <p>El uso de datos personales debe ser mínimo (data minimization), con consentimiento explícito y propósito definido. Los datos no son un recurso ilimitado de uso libre.</p>
+            </div>
+            <div class="principle-card">
+              <div class="principle-icon">🌍</div>
+              <h4>Beneficio Social</h4>
+              <p>La tecnología debe diseñarse para beneficiar a la sociedad en su conjunto, no solo a los accionistas o usuarios directos. Considerar los impactos de segunda y tercera orden.</p>
+            </div>
+          </div>
+
+          <div class="callout purple">
+            <div class="callout-icon">⚖️</div>
+            <div class="callout-content">
+              <strong>El sesgo algorítmico: un riesgo real</strong>
+              <p>Sistemas de IA utilizados en contratación, crédito, justicia penal y atención médica
+              han demostrado sesgos documentados que reproducen y amplifican discriminaciones históricas.
+              Las organizaciones que adoptan IA en la nube deben implementar procesos de auditoría de
+              equidad algorítmica y revisión humana para decisiones de alto impacto.</p>
+            </div>
+          </div>
+
+          <h4 style="margin-top:1.5rem;margin-bottom:1rem;color:var(--primary)">Factores Culturales y Contextuales</h4>
+          <p style="color:var(--text-muted)">
+            La ética en la nube no es universal: los valores culturales, marcos legales y contextos
+            sociales varían significativamente entre países y regiones. Un sistema ético para una
+            organización estadounidense puede no serlo para una latinoamericana o asiática.
+          </p>
+
+          <div class="terms-grid">
+            <div class="term-item" style="border-left-color:var(--purple)">
+              <div class="term-name">Soberanía de datos</div>
+              <div class="term-def">Derecho de un país a gobernar los datos generados dentro de su territorio, incluyendo dónde se almacenan y procesan.</div>
+            </div>
+            <div class="term-item" style="border-left-color:var(--purple)">
+              <div class="term-name">GDPR (Europa)</div>
+              <div class="term-def">Reglamento General de Protección de Datos que establece derechos de los ciudadanos europeos sobre sus datos personales con alcance extraterritorial.</div>
+            </div>
+            <div class="term-item" style="border-left-color:var(--purple)">
+              <div class="term-name">IA Explicable (XAI)</div>
+              <div class="term-def">Inteligencia Artificial diseñada para que sus decisiones y predicciones puedan ser entendidas y verificadas por seres humanos.</div>
+            </div>
+            <div class="term-item" style="border-left-color:var(--purple)">
+              <div class="term-name">Ética desde el diseño</div>
+              <div class="term-def">Incorporar consideraciones éticas desde las primeras etapas del diseño del sistema, no como una revisión posterior al desarrollo.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ── Section 4: Sostenibilidad Ambiental ───────────── -->
+    <section id="sostenibilidad">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon green">🌱</div>
+          <div>
+            <h3>Sostenibilidad Ambiental de las Soluciones Cloud</h3>
+            <p style="color:var(--text-muted);font-size:.87rem;margin:0">Hacer visible el impacto ambiental de la tecnología</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>
+            La computación en la nube tiene un impacto ambiental real y significativo que debe
+            ser medido, comunicado y gestionado activamente. La <strong>ingeniería sostenible</strong>
+            debe ser un elemento consustancial al desarrollo de sistemas inteligentes, no una
+            consideración secundaria o posterior.
+          </p>
+
+          <div class="env-metrics">
+            <div class="metric-card">
+              <div class="metric-value" style="color:#dc2626">~1-2%</div>
+              <div class="metric-label">de las emisiones globales de CO₂</div>
+              <div class="metric-note">provienen de los centros de datos (estimación actual, en rápido crecimiento)</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value" style="color:#f59e0b">200 TWh</div>
+              <div class="metric-label">consumo anual de datacenters globales</div>
+              <div class="metric-note">equivalente al consumo eléctrico de algunos países europeos medianos</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value" style="color:#059669">3x</div>
+              <div class="metric-label">más eficiente en promedio</div>
+              <div class="metric-note">los grandes proveedores cloud vs. datacenters corporativos tradicionales</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value" style="color:#7c3aed">100%</div>
+              <div class="metric-label">meta de energía renovable</div>
+              <div class="metric-note">objetivo declarado por AWS, Azure y GCP para 2025-2030</div>
+            </div>
+          </div>
+
+          <div class="callout warning" style="margin-top:1.5rem">
+            <div class="callout-icon">⚠️</div>
+            <div class="callout-content">
+              <strong>Mito: "La nube es verde por definición"</strong>
+              <p>Migrar a la nube no elimina el impacto ambiental; lo transfiere y potencialmente
+              lo concentra. Si el proveedor usa energía de fuentes fósiles, la huella de carbono
+              puede ser igual o mayor. Además, la IA generativa y el entrenamiento de modelos
+              grandes consumen enormes cantidades de energía y agua para refrigeración.</p>
+            </div>
+          </div>
+
+          <h4 style="margin-top:1.75rem;margin-bottom:1rem;color:var(--primary)">Estrategias para una Nube Sostenible</h4>
+
+          <div class="chars-grid">
+            <div class="char-item">
+              <div class="char-icon">☀️</div>
+              <h4>Energías Renovables</h4>
+              <p>Priorizar proveedores con compromisos verificados de energía renovable (Renewable Energy Certificates, Power Purchase Agreements).</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">📍</div>
+              <h4>Selección de Región</h4>
+              <p>Elegir regiones geográficas donde el proveedor usa más energía limpia. GCP y Azure publican datos de intensidad de carbono por región.</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">⚡</div>
+              <h4>Eficiencia de Código</h4>
+              <p>El código ineficiente gasta más cómputo y, por tanto, más energía. La optimización de aplicaciones es una práctica de sostenibilidad.</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">📊</div>
+              <h4>Medir para Mejorar</h4>
+              <p>Utilizar calculadoras de emisiones de los proveedores (AWS Carbon Footprint, Azure Emissions Impact Dashboard, GCP Carbon Footprint).</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">🔧</div>
+              <h4>Rightsizing y Eficiencia</h4>
+              <p>Eliminar recursos sobredimensionados o no utilizados reduce costos y emisiones simultáneamente. FinOps y GreenOps van de la mano.</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">🌡️</div>
+              <h4>PUE del Datacenter</h4>
+              <p>Evaluar el Power Usage Effectiveness del proveedor. Los mejores hyperscalers logran PUE de 1.1-1.2; un datacenter tradicional suele estar en 1.5-2.0.</p>
+            </div>
+          </div>
+
+          <div class="formula-box">
+            <div class="formula-label">Power Usage Effectiveness (PUE)</div>
+            <div class="formula">PUE = Energía Total del Datacenter / Energía de los Equipos IT</div>
+            <div class="formula-note">
+              Un PUE de 1.0 sería perfecto (toda la energía va a los equipos IT).
+              Un PUE de 2.0 significa que se usa el doble de energía esperada, donde la mitad
+              va a refrigeración, iluminación y sistemas auxiliares.
+            </div>
+          </div>
+
+          <div class="callout success">
+            <div class="callout-icon">🌱</div>
+            <div class="callout-content">
+              <strong>Principio de selección de proveedores sostenibles</strong>
+              <p>No basta con externalizar la infraestructura para dejar de contaminar. Se deben
+              elegir proveedores con conductas ejemplares en eficiencia energética, uso de recursos
+              de código abierto y compromisos climáticos verificables y auditados por terceros.
+              Solicitar el reporte de sostenibilidad del proveedor como parte del proceso de evaluación.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ── Section 5: Impacto Social ─────────────────────── -->
+    <section id="impacto-social">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon blue">👥</div>
+          <div>
+            <h3>Impacto Social de las Soluciones en la Nube</h3>
+            <p style="color:var(--text-muted);font-size:.87rem;margin:0">Evaluación de efectos en los derechos humanos y el bienestar colectivo</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>
+            Las decisiones tecnológicas tienen consecuencias sociales que van más allá de la
+            organización que las adopta. Una evaluación responsable debe analizar cómo las
+            soluciones cloud afectan a empleados, comunidades, usuarios finales y la sociedad
+            en su conjunto.
+          </p>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Dimensión Social</th>
+                  <th>Impactos Positivos Potenciales</th>
+                  <th>Riesgos a Gestionar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Empleo y trabajo</td>
+                  <td>Creación de nuevos roles cloud, trabajo remoto, mayor productividad</td>
+                  <td>Automatización que desplaza empleos, brecha de habilidades digitales</td>
+                </tr>
+                <tr>
+                  <td>Acceso a servicios</td>
+                  <td>Democratización de servicios digitales avanzados para PyMEs y países en desarrollo</td>
+                  <td>Brecha digital (digital divide), exclusión de quienes no tienen acceso a internet</td>
+                </tr>
+                <tr>
+                  <td>Privacidad</td>
+                  <td>Mejores controles técnicos de seguridad que los sistemas tradicionales</td>
+                  <td>Concentración de datos personales en pocas empresas, vigilancia masiva</td>
+                </tr>
+                <tr>
+                  <td>Comunidades locales</td>
+                  <td>Desarrollo económico en regiones donde se instalan datacenters</td>
+                  <td>Alto consumo de agua para refrigeración en zonas con escasez hídrica</td>
+                </tr>
+                <tr>
+                  <td>Cadena de suministro</td>
+                  <td>Presión positiva a proveedores para adoptar estándares éticos</td>
+                  <td>Minería de minerales críticos (litio, cobalto) con impactos ambientales y sociales</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4 style="margin-top:1.75rem;margin-bottom:1rem;color:var(--primary)">Marco de Evaluación de Impacto Social</h4>
+
+          <div class="steps">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div class="step-content">
+                <h4>Identificar grupos de interés (stakeholders)</h4>
+                <p>¿Quiénes serán afectados por esta solución? Incluye empleados, clientes, comunidades locales, socios y grupos vulnerables.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div class="step-content">
+                <h4>Mapear impactos positivos y negativos</h4>
+                <p>Para cada grupo identificado, analiza los beneficios potenciales y los riesgos de daño, incluyendo efectos indirectos.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div class="step-content">
+                <h4>Consultar a los afectados</h4>
+                <p>Los procesos de diseño responsable incluyen la voz de quienes serán afectados, no solo de quienes toman las decisiones.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">4</div>
+              <div class="step-content">
+                <h4>Mitigar riesgos identificados</h4>
+                <p>Diseñar salvaguardas específicas para reducir los impactos negativos: programas de reskilling, acceso equitativo, mecanismos de reclamación.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">5</div>
+              <div class="step-content">
+                <h4>Monitorear y reportar</h4>
+                <p>El impacto social no es estático. Establecer métricas e indicadores para monitorear continuamente los efectos de la solución adoptada.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="quote-block" style="margin-top:2rem">
+            <p class="quote-text">
+              La tecnología no es neutral. Cada decisión de diseño, cada elección de proveedor y
+              cada política de datos refleja valores. La pregunta no es si la tecnología tendrá
+              impacto social, sino si ese impacto será intencional y responsable.
+            </p>
+            <div class="quote-source">Principio de Tecnología Responsable</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ── Section 6: Actividades ────────────────────────── -->
+    <section id="actividades">
+      <div class="activity-box">
+        <div class="activity-title">
+          ✅ Actividades de Aprendizaje - Unidad 3
+        </div>
+        <ul class="activity-list">
+          <li>Selecciona un proveedor cloud (AWS, Azure o GCP) y analiza su modelo de responsabilidad compartida. Crea una tabla que muestre claramente qué responsabilidades son del cliente y cuáles del proveedor en el servicio que uses más frecuentemente.</li>
+          <li>Revisa el reporte de sostenibilidad de dos proveedores cloud. Compara sus compromisos de energía renovable, metas de carbono neto cero y métricas actuales de PUE. Documenta cuál tiene un desempeño ambiental más verificable.</li>
+          <li>Diseña un breve cuestionario de 10 preguntas para evaluar la ética de una solución de IA que tu empresa o institución esté considerando adoptar. Cubre transparencia, equidad, privacidad y responsabilidad.</li>
+          <li>Analiza el impacto social de implementar un sistema de IA para la evaluación automatizada de solicitudes de crédito en un banco latinoamericano. Identifica al menos 3 grupos afectados y propone medidas de mitigación para los riesgos.</li>
+          <li>Utiliza la calculadora de huella de carbono de un proveedor cloud para estimar las emisiones de una carga de trabajo específica. Propone alternativas de configuración que reduzcan las emisiones sin sacrificar rendimiento.</li>
+          <li>Investiga las regulaciones de protección de datos aplicables en tu país para servicios cloud. ¿Qué obligaciones imponen a las organizaciones que transfieren datos a proveedores internacionales?</li>
+        </ul>
+      </div>
+
+      <div class="terms-grid">
+        <div class="term-item">
+          <div class="term-name">Responsabilidad Compartida</div>
+          <div class="term-def">Modelo que define cómo se distribuyen las obligaciones de seguridad entre el proveedor cloud y el cliente, según el modelo de servicio.</div>
+        </div>
+        <div class="term-item">
+          <div class="term-name">Zero Trust</div>
+          <div class="term-def">Paradigma de seguridad que asume que ninguna entidad (interna o externa) es confiable por defecto y requiere verificación continua.</div>
+        </div>
+        <div class="term-item">
+          <div class="term-name">Sesgo Algorítmico</div>
+          <div class="term-def">Errores sistemáticos en los resultados de un algoritmo de IA causados por supuestos incorrectos o datos de entrenamiento sesgados.</div>
+        </div>
+        <div class="term-item">
+          <div class="term-name">PUE - Power Usage Effectiveness</div>
+          <div class="term-def">Métrica que mide la eficiencia energética de un datacenter. Valor ideal: 1.0. Un PUE de 1.5 significa que se consume 50% más energía de la necesaria.</div>
+        </div>
+        <div class="term-item">
+          <div class="term-name">Soberanía de Datos</div>
+          <div class="term-def">Principio que establece que los datos generados en un territorio están sujetos a las leyes y regulaciones de ese país o jurisdicción.</div>
+        </div>
+        <div class="term-item">
+          <div class="term-name">GreenOps</div>
+          <div class="term-def">Práctica que extiende FinOps para incluir la optimización de la huella de carbono junto con la optimización de costos en entornos cloud.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation between units -->
+    <div style="display:flex;justify-content:flex-start;margin-top:2rem">
+      <a href="unidad2.html" class="btn btn-outline" style="color:var(--primary);border-color:var(--border)">
+        ← Unidad 2: Modelos de Nube
+      </a>
+    </div>
+
+  </main>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h4>☁️ CloudTech360</h4>
+        <p>Sitio educativo sobre computación en la nube, orientado al desarrollo de competencias empresariales y tecnológicas.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Unidades</h5>
+        <ul>
+          <li><a href="unidad1.html">Unidad 1: Costos y ROI</a></li>
+          <li><a href="unidad2.html">Unidad 2: Modelos de Nube</a></li>
+          <li><a href="unidad3.html">Unidad 3: Ética y Sostenibilidad</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Temas Unidad 3</h5>
+        <ul>
+          <li><a href="#responsabilidad">Responsabilidad Compartida</a></li>
+          <li><a href="#seguridad">Controles de Seguridad</a></li>
+          <li><a href="#etica">Ética y IA</a></li>
+          <li><a href="#sostenibilidad">Sostenibilidad Ambiental</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CloudTech360 - Tecnologías Emergentes: Computación en la Nube</span>
+      <span>Unidad 3 de 3</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

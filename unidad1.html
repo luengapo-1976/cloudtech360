@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unidad 1 - Soluciones de TI y Costos · CloudTech360</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-brand">
+      <div class="brand-icon">☁️</div>
+      CloudTech360
+    </a>
+    <ul class="navbar-nav">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="unidad1.html" class="active">Unidad 1</a></li>
+      <li><a href="unidad2.html">Unidad 2</a></li>
+      <li><a href="unidad3.html">Unidad 3</a></li>
+      <li><a href="autor.html">Autor</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Page Hero -->
+<div class="page-hero u1">
+  <div class="page-hero-content">
+    <div class="unit-label">💰 Unidad 1</div>
+    <h1>Soluciones de Tecnología Informática y Costos</h1>
+    <p>
+      Desarrolla la capacidad de diagnosticar oportunidades de implementación tecnológica
+      y evaluar su factibilidad económica con rigor analítico.
+    </p>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="content-wrapper">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <nav class="sidebar-nav">
+      <div class="sidebar-nav-title">Contenido</div>
+      <a href="#roi-tco">📊 ROI y TCO</a>
+      <a href="#factores">⚙️ Factores de Migración</a>
+      <a href="#capex-opex">💡 CapEx vs OpEx</a>
+      <a href="#estrategia">🎯 Estrategia de Negocio</a>
+      <a href="#calculadora">🧮 Calculadora ROI</a>
+      <a href="#actividades">✅ Actividades</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- ── Section 1: ROI y TCO ─────────────────────────── -->
+    <section id="roi-tco">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon blue">📊</div>
+          <div>
+            <h3>Retorno de la Inversión (ROI)</h3>
+            <p style="color:var(--text-muted);font-size:.87rem;margin:0">Indicador clave para la evaluación económica</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>
+            El <strong>Retorno de la Inversión (ROI)</strong> es la proporción entre los beneficios netos
+            generados por una solución tecnológica y el costo total de la inversión realizada.
+            Es el indicador fundamental para justificar proyectos de adopción de tecnología en la nube
+            ante la alta dirección.
+          </p>
+
+          <div class="formula-box">
+            <div class="formula-label">Fórmula del ROI</div>
+            <div class="formula">ROI = [(Beneficios − Inversión) / Inversión] × 100</div>
+            <div class="formula-note">
+              Un ROI positivo indica que la inversión genera valor; un ROI superior al 20 % es
+              generalmente considerado atractivo en proyectos de TI.
+            </div>
+          </div>
+
+          <p>
+            En el contexto de la nube, los <strong>beneficios</strong> incluyen reducción de costos
+            operativos, mayor velocidad de lanzamiento de productos, reducción de tiempo de inactividad
+            y ahorro en licencias de software. La <strong>inversión</strong> abarca costos de migración,
+            capacitación y suscripciones iniciales.
+          </p>
+
+          <div class="callout info">
+            <div class="callout-icon">💡</div>
+            <div class="callout-content">
+              <strong>Beneficios cualitativos</strong>
+              <p>Más allá del ROI cuantitativo, la adopción de la nube aporta beneficios difíciles de
+              monetizar directamente: mayor agilidad organizacional, capacidad de innovación acelerada
+              y mejora en la experiencia del cliente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon green">🏷️</div>
+          <div>
+            <h3>Costo Total de Propiedad (TCO)</h3>
+            <p style="color:var(--text-muted);font-size:.87rem;margin:0">Visión completa del costo de una solución tecnológica</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>
+            El <strong>Costo Total de Propiedad (TCO)</strong> es el análisis comprehensivo de todos
+            los costos asociados a la adquisición, operación, mantenimiento y eventual retiro de una
+            solución tecnológica durante su ciclo de vida completo.
+          </p>
+
+          <div class="formula-box">
+            <div class="formula-label">Componentes del TCO</div>
+            <div class="formula">TCO = Adquisición + Operación + Mantenimiento + Entrenamiento + Retiro</div>
+            <div class="formula-note">
+              Muchas organizaciones subestiman el TCO al considerar únicamente los costos de adquisición,
+              ignorando los costos de operación que suelen ser 3 a 5 veces mayores a largo plazo.
+            </div>
+          </div>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Componente TCO</th>
+                  <th>Infraestructura Propia</th>
+                  <th>Nube Pública</th>
+                  <th>Impacto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Hardware y servidores</td>
+                  <td>Alto (CapEx)</td>
+                  <td>Eliminado</td>
+                  <td><span class="badge badge-green">↓ Reducción significativa</span></td>
+                </tr>
+                <tr>
+                  <td>Licenciamiento de software</td>
+                  <td>Por compra / renovación</td>
+                  <td>Incluido en suscripción</td>
+                  <td><span class="badge badge-green">↓ Simplificación</span></td>
+                </tr>
+                <tr>
+                  <td>Consumo energético</td>
+                  <td>Directo + refrigeración</td>
+                  <td>Responsabilidad del proveedor</td>
+                  <td><span class="badge badge-green">↓ Reducción</span></td>
+                </tr>
+                <tr>
+                  <td>Personal de TI</td>
+                  <td>Alto (administración completa)</td>
+                  <td>Reducido (gestión parcial)</td>
+                  <td><span class="badge badge-blue">↔ Reasignación de roles</span></td>
+                </tr>
+                <tr>
+                  <td>Capacitación</td>
+                  <td>Moderada</td>
+                  <td>Inicial + continua</td>
+                  <td><span class="badge badge-amber">↑ Inversión requerida</span></td>
+                </tr>
+                <tr>
+                  <td>Escalabilidad</td>
+                  <td>Costosa y lenta</td>
+                  <td>Inmediata y flexible</td>
+                  <td><span class="badge badge-green">↓ Costo de escalar</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ── Section 2: Factores de Migración ─────────────── -->
+    <section id="factores">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon amber">⚙️</div>
+          <div>
+            <h3>Factores Críticos para el Cálculo de Costos de Migración</h3>
+            <p style="color:var(--text-muted);font-size:.87rem;margin:0">Elementos que determinan la viabilidad económica de una migración</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>
+            Una evaluación precisa del costo de migración a la nube debe considerar múltiples
+            factores que van más allá del simple costo de infraestructura. Ignorar alguno de estos
+            elementos puede comprometer la rentabilidad proyectada del proyecto.
+          </p>
+
+          <div class="chars-grid">
+            <div class="char-item">
+              <div class="char-icon">📄</div>
+              <h4>Licenciamiento</h4>
+              <p>Costos de licencias por uso, por usuario o incluidas en el servicio. Evalúa beneficios como BYOL (Bring Your Own License).</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">💾</div>
+              <h4>Almacenamiento</h4>
+              <p>Costo por GB almacenado, IOPS requeridas, redundancia geográfica y costos de transferencia de datos entre regiones.</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">⚡</div>
+              <h4>Consumo Energético</h4>
+              <p>Ahorro en electricidad, refrigeración y UPS del data center propio. Puede representar 30-40% del costo operativo.</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">👥</div>
+              <h4>Personal Adicional</h4>
+              <p>Nuevos roles como Cloud Architect, DevOps Engineer y especialistas en seguridad de la nube.</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">🎓</div>
+              <h4>Capacitación</h4>
+              <p>Certificaciones, cursos y tiempo de curva de aprendizaje para el equipo de TI existente.</p>
+            </div>
+            <div class="char-item">
+              <div class="char-icon">🔄</div>
+              <h4>Migración y Refactoring</h4>
+              <p>Costos de análisis, rediseño de aplicaciones (cloud-native) y pruebas durante la transición.</p>
+            </div>
+          </div>
+
+          <div class="callout warning">
+            <div class="callout-icon">⚠️</div>
+            <div class="callout-content">
+              <strong>Recomendación estratégica: Cloud Native</strong>
+              <p>Se recomienda adoptar un enfoque de nube nativa y rediseñar las aplicaciones al migrarlas.
+              El simple "lift and shift" (levantar y mover sin modificar) raramente aprovecha la agilidad
+              y resiliencia real del entorno cloud, y puede resultar más costoso que la infraestructura propia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon purple">🗺️</div>
+          <div>
+            <h3>Las 6 R's de Migración a la Nube</h3>
+            <p style="color:var(--text-muted);font-size:.87rem;margin:0">Estrategias de migración ordenadas por complejidad y beneficio</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Estrategia</th>
+                  <th>Descripción</th>
+                  <th>Esfuerzo</th>
+                  <th>Beneficio Cloud</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Rehosting (Lift & Shift)</td>
+                  <td>Mover la aplicación sin cambios al entorno cloud</td>
+                  <td><span class="badge badge-green">Bajo</span></td>
+                  <td><span class="badge badge-amber">Moderado</span></td>
+                </tr>
+                <tr>
+                  <td>Replatforming</td>
+                  <td>Pequeñas optimizaciones para aprovechar servicios cloud</td>
+                  <td><span class="badge badge-blue">Medio</span></td>
+                  <td><span class="badge badge-blue">Medio-Alto</span></td>
+                </tr>
+                <tr>
+                  <td>Repurchasing (SaaS)</td>
+                  <td>Reemplazar por una solución SaaS existente</td>
+                  <td><span class="badge badge-green">Bajo</span></td>
+                  <td><span class="badge badge-blue">Medio</span></td>
+                </tr>
+                <tr>
+                  <td>Refactoring (Re-architecting)</td>
+                  <td>Rediseño completo como aplicación cloud-native</td>
+                  <td><span class="badge badge-red">Alto</span></td>
+                  <td><span class="badge badge-green">Máximo</span></td>
+                </tr>
+                <tr>
+                  <td>Retiring</td>
+                  <td>Eliminar aplicaciones obsoletas o sin valor</td>
+                  <td><span class="badge badge-green">Bajo</span></td>
+                  <td><span class="badge badge-green">Alto (ahorro)</span></td>
+                </tr>
+                <tr>
+                  <td>Retaining</td>
+                  <td>Mantener on-premise por razones técnicas o regulatorias</td>
+                  <td><span class="badge badge-green">Ninguno</span></td>
+                  <td><span class="badge badge-amber">Ninguno</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ── Section 3: CapEx vs OpEx ─────────────────────── -->
+    <section id="capex-opex">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon blue">💡</div>
+          <div>
+            <h3>CapEx vs OpEx: El Cambio de Paradigma Financiero</h3>
+            <p style="color:var(--text-muted);font-size:.87rem;margin:0">Cómo la nube transforma la estructura de costos de TI</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>
+            Uno de los cambios más significativos que introduce la nube en las organizaciones es la
+            transformación del modelo de gasto en TI: de grandes inversiones de capital iniciales
+            (<strong>CapEx</strong>) hacia gastos operativos recurrentes pero predecibles (<strong>OpEx</strong>).
+          </p>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Dimensión</th>
+                  <th>CapEx (Infraestructura Propia)</th>
+                  <th>OpEx (Nube / Suscripción)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tipo de gasto</td>
+                  <td>Inversión de capital inicial</td>
+                  <td>Gasto operativo recurrente</td>
+                </tr>
+                <tr>
+                  <td>Impacto contable</td>
+                  <td>Se deprecia a lo largo del tiempo</td>
+                  <td>Se deduce en el período contable</td>
+                </tr>
+                <tr>
+                  <td>Flexibilidad</td>
+                  <td>Baja - comprometido a largo plazo</td>
+                  <td>Alta - escala según demanda</td>
+                </tr>
+                <tr>
+                  <td>Riesgo de obsolescencia</td>
+                  <td>Alto - el hardware envejece</td>
+                  <td>Bajo - el proveedor actualiza</td>
+                </tr>
+                <tr>
+                  <td>Vinculación con la demanda</td>
+                  <td>Difícil - sobredimensionado o subutilizado</td>
+                  <td>Directa - paga lo que consumes</td>
+                </tr>
+                <tr>
+                  <td>Barrera de entrada</td>
+                  <td>Alta - requiere aprobación de capital</td>
+                  <td>Baja - cuenta en minutos</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="callout success">
+            <div class="callout-icon">✅</div>
+            <div class="callout-content">
+              <strong>Ventaja financiera clave</strong>
+              <p>La nube mejora la vinculación entre la demanda del negocio y la capacidad tecnológica.
+              Las startups y empresas en crecimiento pueden comenzar a pequeña escala y crecer sin las
+              barreras del CapEx, mientras que las empresas establecidas pueden liberar capital de trabajo
+              que estaba inmovilizado en infraestructura física.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ── Section 4: Estrategia ─────────────────────────── -->
+    <section id="estrategia">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon green">🎯</div>
+          <div>
+            <h3>Estrategia de Adopción Tecnológica en la Nube</h3>
+            <p style="color:var(--text-muted);font-size:.87rem;margin:0">Marco de referencia para la toma de decisiones empresariales</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>
+            La adopción exitosa de la nube no es un evento único sino un proceso estratégico
+            que requiere alineación con los objetivos del negocio, gestión del cambio
+            organizacional y una hoja de ruta clara.
+          </p>
+
+          <div class="steps">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div class="step-content">
+                <h4>Diagnóstico y Assessment</h4>
+                <p>Inventariar las aplicaciones actuales, clasificar por criticidad, dependencias y viabilidad de migración. Identificar cargas de trabajo candidatas.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div class="step-content">
+                <h4>Business Case y Análisis Financiero</h4>
+                <p>Calcular el TCO actual vs. el costo proyectado en la nube. Estimar el ROI a 3 y 5 años, incluyendo costos de transición y beneficios cualitativos.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div class="step-content">
+                <h4>Selección de Modelo y Proveedor</h4>
+                <p>Evaluar SaaS, PaaS e IaaS según las necesidades específicas. Comparar proveedores en términos de costo, SLA, seguridad, cumplimiento y soporte.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">4</div>
+              <div class="step-content">
+                <h4>Prueba de Concepto (PoC)</h4>
+                <p>Comenzar con cargas de trabajo de bajo riesgo. Validar supuestos de costo y rendimiento antes de comprometerse con la migración completa.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">5</div>
+              <div class="step-content">
+                <h4>Migración por Fases y Optimización</h4>
+                <p>Migrar en olas controladas, monitorear costos continuamente con herramientas de FinOps y optimizar el uso de recursos (rightsizing).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="highlight" style="margin-top:1.5rem">
+            <p style="margin:0;font-size:.9rem;color:var(--primary)">
+              <strong>📌 Principio de gobierno:</strong> Aunque se utilicen proveedores externos,
+              la organización nunca puede externalizar la responsabilidad del gobierno corporativo de TI.
+              La decisión de adoptar la nube debe estar respaldada por políticas claras de datos,
+              seguridad y cumplimiento regulatorio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ── Section 5: Calculadora ────────────────────────── -->
+    <section id="calculadora">
+      <div class="card" id="roi-calc">
+        <div class="card-header">
+          <div class="card-icon blue">🧮</div>
+          <div>
+            <h3>Calculadora Interactiva de ROI y TCO</h3>
+            <p style="color:var(--text-muted);font-size:.87rem;margin:0">Herramienta de apoyo para la evaluación de proyectos cloud</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <p>Ingresa los valores de tu proyecto para obtener un cálculo rápido de ROI y TCO estimado.</p>
+
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin:1.5rem 0">
+            <div>
+              <label style="display:block;font-size:.85rem;font-weight:600;color:var(--text);margin-bottom:.4rem">
+                Beneficios esperados (USD/año)
+              </label>
+              <input id="inp-benefits" type="number" placeholder="Ej: 150000"
+                style="width:100%;padding:.7rem 1rem;border:1px solid var(--border);border-radius:8px;font-size:.95rem;color:var(--text);background:var(--surface-2)" />
+            </div>
+            <div>
+              <label style="display:block;font-size:.85rem;font-weight:600;color:var(--text);margin-bottom:.4rem">
+                Inversión inicial (USD)
+              </label>
+              <input id="inp-investment" type="number" placeholder="Ej: 80000"
+                style="width:100%;padding:.7rem 1rem;border:1px solid var(--border);border-radius:8px;font-size:.95rem;color:var(--text);background:var(--surface-2)" />
+            </div>
+            <div>
+              <label style="display:block;font-size:.85rem;font-weight:600;color:var(--text);margin-bottom:.4rem">
+                Costos operativos anuales (USD)
+              </label>
+              <input id="inp-tco" type="number" placeholder="Ej: 30000"
+                style="width:100%;padding:.7rem 1rem;border:1px solid var(--border);border-radius:8px;font-size:.95rem;color:var(--text);background:var(--surface-2)" />
+            </div>
+          </div>
+
+          <button id="calc-btn" class="btn btn-primary" style="width:100%;justify-content:center">
+            🧮 Calcular ROI y TCO
+          </button>
+
+          <div id="calc-result"></div>
+
+          <p style="font-size:.8rem;color:var(--text-light);margin-top:1rem">
+            * Esta calculadora es una herramienta de estimación. Para proyectos reales, utiliza
+            las calculadoras oficiales de los proveedores cloud (AWS Pricing Calculator, Azure Calculator, GCP Pricing).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ── Section 6: Actividades ────────────────────────── -->
+    <section id="actividades">
+      <div class="activity-box">
+        <div class="activity-title">
+          ✅ Actividades de Aprendizaje - Unidad 1
+        </div>
+        <ul class="activity-list">
+          <li>Selecciona una empresa de tu sector y realiza un análisis TCO comparando infraestructura propia vs. migración a la nube. Identifica todos los componentes de costo relevantes.</li>
+          <li>Calcula el ROI proyectado para un proyecto de migración a SaaS (por ejemplo, Microsoft 365 o Google Workspace) considerando costos de licencias actuales, capacitación y ahorro en administración.</li>
+          <li>Clasifica las aplicaciones de una organización hipotética usando las 6 R's de migración y justifica tu decisión para cada una.</li>
+          <li>Investiga un caso real de migración a la nube en América Latina. Identifica qué factores de costo se subestimaron y cuáles fueron las lecciones aprendidas.</li>
+          <li>Elabora un business case de una página para proponer la adopción de una solución cloud específica a la alta dirección, incluyendo ROI proyectado y análisis de riesgos.</li>
+        </ul>
+      </div>
+
+      <div class="terms-grid">
+        <div class="term-item">
+          <div class="term-name">ROI - Return on Investment</div>
+          <div class="term-def">Proporción porcentual entre los beneficios netos y la inversión total realizada. Mide la rentabilidad de una inversión.</div>
+        </div>
+        <div class="term-item">
+          <div class="term-name">TCO - Total Cost of Ownership</div>
+          <div class="term-def">Análisis comprensivo de todos los costos directos e indirectos asociados a la adquisición y operación de una solución durante su ciclo de vida.</div>
+        </div>
+        <div class="term-item">
+          <div class="term-name">CapEx - Capital Expenditure</div>
+          <div class="term-def">Gastos de capital utilizados para adquirir activos físicos. En TI: servidores, equipos de red, data centers.</div>
+        </div>
+        <div class="term-item">
+          <div class="term-name">OpEx - Operational Expenditure</div>
+          <div class="term-def">Gastos operativos recurrentes para mantener el negocio funcionando. En nube: suscripciones, consumo de servicios, soporte.</div>
+        </div>
+        <div class="term-item">
+          <div class="term-name">FinOps</div>
+          <div class="term-def">Práctica de gestión financiera que permite a los equipos maximizar el valor del negocio a través del control del gasto en la nube.</div>
+        </div>
+        <div class="term-item">
+          <div class="term-name">Rightsizing</div>
+          <div class="term-def">Proceso de ajuste del tamaño de los recursos cloud (instancias, almacenamiento) para coincidir con la demanda real y minimizar costos.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation between units -->
+    <div style="display:flex;justify-content:flex-end;margin-top:2rem">
+      <a href="unidad2.html" class="btn btn-primary">
+        Ir a Unidad 2: Modelos de Nube →
+      </a>
+    </div>
+
+  </main>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h4>☁️ CloudTech360</h4>
+        <p>Sitio educativo sobre computación en la nube, orientado al desarrollo de competencias empresariales y tecnológicas.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Unidades</h5>
+        <ul>
+          <li><a href="unidad1.html">Unidad 1: Costos y ROI</a></li>
+          <li><a href="unidad2.html">Unidad 2: Modelos de Nube</a></li>
+          <li><a href="unidad3.html">Unidad 3: Ética y Sostenibilidad</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Temas Unidad 1</h5>
+        <ul>
+          <li><a href="#roi-tco">ROI y TCO</a></li>
+          <li><a href="#factores">Factores de Migración</a></li>
+          <li><a href="#capex-opex">CapEx vs OpEx</a></li>
+          <li><a href="#calculadora">Calculadora ROI</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CloudTech360 - Tecnologías Emergentes: Computación en la Nube</span>
+      <span>Unidad 1 de 3</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
