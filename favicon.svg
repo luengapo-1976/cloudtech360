@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Fondo redondeado -->
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <!-- Nube -->
+  <path d="M46 36a8 8 0 0 0-7.4-8 10 10 0 0 0-19.2 2.5A7 7 0 0 0 20 44h26a8 8 0 0 0 0-8z" fill="#ffffff" opacity="0.95"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f2d5e"/>
+      <stop offset="100%" stop-color="#00b4d8"/>
+    </linearGradient>
+  </defs>
+</svg>
